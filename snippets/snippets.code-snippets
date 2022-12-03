@@ -1,0 +1,213 @@
+{
+    "menu.add_feature": {
+		"prefix": "menu.add_feature",
+		"body": [
+		  "menu.add_feature(\"$0\",\"$1\",$2,function(feat)\n$3\nend)"
+		],
+		"description": "创建一个选项"
+	  },
+      "menu.delete_feature": {
+        "prefix": "menu.delete_feature",
+        "body": [
+          "menu.delete_feature($0)"
+        ],
+        "description": "删除一个选项"
+      },
+      "menu.set_menu_can_navigate": {
+        "prefix": "menu.set_menu_can_navigate",
+        "body": [
+          "menu.set_menu_can_navigate($0)"
+        ],
+        "description": "设置此选项是否可以被导航"
+      },
+      "menu.get_version": {
+        "prefix": "menu.get_version",
+        "body": [
+          "menu.get_version($0)"
+        ],
+        "description": "获得当前菜单版本号"
+      },
+      "menu.add_player_feature": {
+        "prefix": "menu.add_player_feature",
+        "body": [
+          "menu.add_player_feature(\"$0\",\"$1\",$2,function(feat,pid)",
+          "    $3",
+          "end)"
+        ],
+        "description": "添加一个玩家选项"
+      },
+      "menu.delete_player_feature": {
+        "prefix": "menu.delete_player_feature",
+        "body": [
+          "menu.delete_player_feature($0)"
+        ],
+        "description": "移除一个玩家选项"
+      },
+      "menu.is_threading_mode": {
+        "prefix": "menu.is_threading_mode",
+        "body": [
+          "menu.is_threading_mode($0)"
+        ],
+        "description": "是否为线程模式"
+      },
+      "menu.create_thread": {
+        "prefix": "menu.create_thread",
+        "body": [
+          "menu.create_thread(function()",
+          "    $0",
+          "end,${1:nil})"
+        ],
+        "description": "创建线程"
+      },
+      "menu.has_thread_finished": {
+        "prefix": "menu.has_thread_finished",
+        "body": [
+          "menu.has_thread_finished($0)"
+        ],
+        "description": "检查线程是否被终结"
+      },
+      "menu.delete_thread": {
+        "prefix": "menu.delete_thread",
+        "body": [
+          "menu.delete_thread($0)"
+        ],
+        "description": "移除一个线程"
+      },
+      "menu.notify": {
+        "prefix": "menu.notify",
+        "body": [
+          "menu.notify(\"${0:提示信息}\",${1:nil},${2:4},$3)"
+        ],
+        "description": "提示"
+      },
+      "menu.clear_all_notifications": {
+        "prefix": "menu.clear_all_notifications",
+        "body": [
+          "menu.clear_all_notifications()"
+        ],
+        "description": "清理所有提示信息"
+      },
+      "menu.clear_visible_notifications": {
+        "prefix": "menu.clear_visible_notifications",
+        "body": [
+          "menu.clear_visible_notifications()"
+        ],
+        "description": "清理可见提示信息"
+      },
+      "menu.is_trusted_mode_enabled": {
+        "prefix": "menu.is_trusted_mode_enabled",
+        "body": [
+          "menu.is_trusted_mode_enabled(${0:nil})"
+        ],
+        "description": "信任模式是否开启\nLUA_TRUST_STATS         = 1 << 0\nLUA_TRUST_SCRIPT_VARS   = 1 << 1\nLUA_TRUST_NATIVES       = 1 << 2\nLUA_TRUST_HTTP          = 1 << 3\nLUA_TRUST_MEMORY        = 1 << 4,"
+      },
+      "menu.get_feature_by_hierarchy_key": {
+        "prefix": "menu.get_feature_by_hierarchy_key",
+        "body": [
+          "menu.get_feature_by_hierarchy_key(\"$0\")"
+        ],
+        "description": ""
+      },
+      "menu.is_open": {
+        "prefix": "menu.is_open",
+        "body": [
+          "menu.is_open()"
+        ],
+        "description": ""
+      },
+      "menu.is_window_in_foreground": {
+        "prefix": "menu.is_window_in_foreground",
+        "body": [
+          "menu.is_window_in_foreground()"
+        ],
+        "description": "检测GTAV窗口是否在前"
+      },
+      "menu.exit": {
+        "prefix": "menu.exit",
+        "body": [
+          "menu.exit()"
+        ],
+        "description": ""
+      },
+      "Regex": {
+        "prefix": "Regex",
+        "body": [
+          "Regex(\"$0\")"
+        ],
+        "description": ""
+      },
+      "IniParser": {
+        "prefix": "IniParser",
+        "body": [
+          "IniParser(\"$0\")"
+        ],
+        "description": ""
+      },
+      "menukey.keys": {
+        "prefix": "menukey.keys",
+        "body": [
+          "menukey.keys"
+        ],
+        "description": "m"
+      },
+      "menukey.push_vk": {
+        "prefix": "menukey.push_vk",
+        "body": [
+          "menukey.push_vk($0)"
+        ],
+        "description": ""
+      },
+      "menukey.push_str": {
+        "prefix": "menukey.push_str",
+        "body": [
+          "menukey.push_str(\"$0\")"
+        ],
+        "description": ""
+      },
+      "menukey.pop": {
+        "prefix": "menukey.pop",
+        "body": [
+          "menukey.pop()"
+        ],
+        "description": ""
+      },
+      "menukey.clear": {
+        "prefix": "menukey.clear",
+        "body": [
+          "menukey.clear()"
+        ],
+        "description": ""
+      },
+      "menukey.is_down": {
+        "prefix": "menukey.is_down",
+        "body": [
+          "menukey.is_down()"
+        ],
+        "description": ""
+      },
+      "menukey.is_down_stepped": {
+        "prefix": "menukey.is_down_stepped",
+        "body": [
+          "menukey.is_down_stepped()"
+        ],
+        "description": ""
+      },
+      "hooks.script_event_hook": {
+        "prefix": "hooks.script_event_hook",
+        "body": [
+          "hooks.script_event_hook(${0:PID},${1:PID},${2:{}},${3:1})"
+        ],
+        "description": ""
+      },
+      "hooks.net_event_hook": {
+        "prefix": "hooks.net_event_hook",
+        "body": [
+          "hooks.net_event_hook(${0:PID},${1:PID},${2:EventID})"
+        ],
+        "description": ""
+      }
+
+
+
+
+}

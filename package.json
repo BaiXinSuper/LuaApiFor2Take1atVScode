@@ -1,0 +1,32 @@
+{
+  "name": "luaapisupportfor2take1",
+  "displayName": "2Take1LuaApiSupport",
+  "description": "",
+  "publisher":"BaiXinSuper",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "keywords":["2Take1","Lua"],
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "lua",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "icon": "images/logo.png",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/BaiXinSuper/LuaApiFor2Take1atVScode/blob/main/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BaiXinSuper/LuaApiFor2Take1atVScode.git"
+  },
+  "homepage": "https://github.com/BaiXinSuper/"
+}
