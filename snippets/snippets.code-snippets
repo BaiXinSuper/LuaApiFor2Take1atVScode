@@ -1,110 +1,110 @@
 {
     "menu.add_feature": {
-		"prefix": "menu.add_feature",
+		"prefix": ["menu.add_feature","add_feature"],
 		"body": [
-		  "menu.add_feature(\"$0\",\"$1\",$2,function(feat)\n$3\nend)"
+		  "menu.add_feature(\"$1\",\"$2\",$3,function(feat)\n$4\nend)"
 		],
 		"description": "创建一个选项"
 	  },
       "menu.delete_feature": {
-        "prefix": "menu.delete_feature",
+        "prefix": ["menu.delete_feature","delete_feature"],
         "body": [
-          "menu.delete_feature($0)"
+          "menu.delete_feature($1)"
         ],
         "description": "删除一个选项"
       },
       "menu.set_menu_can_navigate": {
         "prefix": "menu.set_menu_can_navigate",
         "body": [
-          "menu.set_menu_can_navigate($0)"
+          "menu.set_menu_can_navigate($1)"
         ],
         "description": "设置此选项是否可以被导航"
       },
       "menu.get_version": {
         "prefix": "menu.get_version",
         "body": [
-          "menu.get_version($0)"
+          "menu.get_version($1)"
         ],
         "description": "获得当前菜单版本号"
       },
       "menu.add_player_feature": {
-        "prefix": "menu.add_player_feature",
+        "prefix": ["menu.add_player_feature","add_player_feature"],
         "body": [
-          "menu.add_player_feature(\"$0\",\"$1\",$2,function(feat,pid)",
-          "    $3",
+          "menu.add_player_feature(\"$1\",\"$2\",$3,function(feat,pid)",
+          "    $4",
           "end)"
         ],
         "description": "添加一个玩家选项"
       },
       "menu.delete_player_feature": {
-        "prefix": "menu.delete_player_feature",
+        "prefix": ["menu.delete_player_feature","delete_player_feature"],
         "body": [
-          "menu.delete_player_feature($0)"
+          "menu.delete_player_feature($1)"
         ],
         "description": "移除一个玩家选项"
       },
       "menu.is_threading_mode": {
-        "prefix": "menu.is_threading_mode",
+        "prefix": ["menu.is_threading_mode","is_threading_mode"],
         "body": [
-          "menu.is_threading_mode($0)"
+          "menu.is_threading_mode($1)"
         ],
         "description": "是否为线程模式"
       },
       "menu.create_thread": {
-        "prefix": "menu.create_thread",
+        "prefix": ["menu.create_thread","create_thread"],
         "body": [
           "menu.create_thread(function()",
-          "    $0",
-          "end,${1:nil})"
+          "    $1",
+          "end,${2:nil})"
         ],
         "description": "创建线程"
       },
       "menu.has_thread_finished": {
-        "prefix": "menu.has_thread_finished",
+        "prefix": ["menu.has_thread_finished","has_thread_finished"],
         "body": [
-          "menu.has_thread_finished($0)"
+          "menu.has_thread_finished($1)"
         ],
         "description": "检查线程是否被终结"
       },
       "menu.delete_thread": {
-        "prefix": "menu.delete_thread",
+        "prefix": ["menu.delete_thread","delete_thread"],
         "body": [
-          "menu.delete_thread($0)"
+          "menu.delete_thread($1)"
         ],
         "description": "移除一个线程"
       },
       "menu.notify": {
-        "prefix": "menu.notify",
+        "prefix": ["menu.notify","notify"],
         "body": [
-          "menu.notify(\"${0:提示信息}\",${1:nil},${2:4},$3)"
+          "menu.notify(\"${1:提示信息}\",${2:nil},${3:4},$4)"
         ],
         "description": "提示"
       },
       "menu.clear_all_notifications": {
-        "prefix": "menu.clear_all_notifications",
+        "prefix": ["menu.clear_all_notifications","clear_all_notifications"],
         "body": [
           "menu.clear_all_notifications()"
         ],
         "description": "清理所有提示信息"
       },
       "menu.clear_visible_notifications": {
-        "prefix": "menu.clear_visible_notifications",
+        "prefix": ["menu.clear_visible_notifications","clear_visible_notifications"],
         "body": [
           "menu.clear_visible_notifications()"
         ],
         "description": "清理可见提示信息"
       },
       "menu.is_trusted_mode_enabled": {
-        "prefix": "menu.is_trusted_mode_enabled",
+        "prefix": ["menu.is_trusted_mode_enabled","is_trusted_mode_enabled"],
         "body": [
-          "menu.is_trusted_mode_enabled(${0:nil})"
+          "menu.is_trusted_mode_enabled(${1:nil})"
         ],
         "description": "信任模式是否开启\nLUA_TRUST_STATS         = 1 << 0\nLUA_TRUST_SCRIPT_VARS   = 1 << 1\nLUA_TRUST_NATIVES       = 1 << 2\nLUA_TRUST_HTTP          = 1 << 3\nLUA_TRUST_MEMORY        = 1 << 4,"
       },
       "menu.get_feature_by_hierarchy_key": {
-        "prefix": "menu.get_feature_by_hierarchy_key",
+        "prefix": ["menu.get_feature_by_hierarchy_key","get_feature_by_hierarchy_key"],
         "body": [
-          "menu.get_feature_by_hierarchy_key(\"$0\")"
+          "menu.get_feature_by_hierarchy_key(\"$1\")"
         ],
         "description": ""
       },
@@ -116,7 +116,7 @@
         "description": ""
       },
       "menu.is_window_in_foreground": {
-        "prefix": "menu.is_window_in_foreground",
+        "prefix": ["menu.is_window_in_foreground","is_window_in_foreground"],
         "body": [
           "menu.is_window_in_foreground()"
         ],
@@ -132,14 +132,14 @@
       "Regex": {
         "prefix": "Regex",
         "body": [
-          "Regex(\"$0\")"
+          "Regex(\"$1\")"
         ],
         "description": ""
       },
       "IniParser": {
         "prefix": "IniParser",
         "body": [
-          "IniParser(\"$0\")"
+          "IniParser(\"$1\")"
         ],
         "description": ""
       },
@@ -153,14 +153,14 @@
       "menukey.push_vk": {
         "prefix": "menukey.push_vk",
         "body": [
-          "menukey.push_vk($0)"
+          "menukey.push_vk($1)"
         ],
         "description": ""
       },
       "menukey.push_str": {
         "prefix": "menukey.push_str",
         "body": [
-          "menukey.push_str(\"$0\")"
+          "menukey.push_str(\"$1\")"
         ],
         "description": ""
       },
@@ -193,19 +193,86 @@
         "description": ""
       },
       "hooks.script_event_hook": {
-        "prefix": "hooks.script_event_hook",
+        "prefix": ["hooks.script_event_hook","script_event_hook"],
         "body": [
-          "hooks.script_event_hook(${0:PID},${1:PID},${2:{}},${3:1})"
+          "hooks.script_event_hook(${1:PID},${2:PID},${3:{}},${4:1})"
         ],
         "description": ""
       },
       "hooks.net_event_hook": {
         "prefix": "hooks.net_event_hook",
         "body": [
-          "hooks.net_event_hook(${0:PID},${1:PID},${2:EventID})"
+          "hooks.net_event_hook(${1:PID},${2:PID},${3:EventID})"
         ],
         "description": ""
-      }
+      },
+      "event.add_event_listener": {
+        "prefix": ["add_event_listener","event.add_event_listener"],
+        "body": [
+          "event.add_event_listener(\"${1|exit,chat,player_join,player_leave,script,modder|}\",function(feat,res)",
+          "    $2",
+          "end)"
+        ],
+        "description": "添加事件监听器"
+      },
+      "event.remove_event_listener": {
+        "prefix": ["remove_event_listener","event.remove_event_listener"],
+        "body": [
+          "event.remove_event_listener(${1|exit,chat,player_join,player_leave,script,modder|},$2)",
+        ],
+        "description": "移除事件监听器"
+      },
+      "d3d.draw_text": {
+        "prefix": "d3d.draw_text",
+        "body": [
+          "d3d.draw_text(\"${1:text}\",v2(${2:pos X},${3:pos Y}),v2(${4:size X},${5:size X}),${6:scale},${7:color},${8:flags})"
+        ],
+        "description": "使用D3D渲染器绘制文字"
+      },
+      "d3d.register_sprite": {
+        "prefix": "d3d.register_sprite",
+        "body": [
+          "d3d.register_sprite(\"${1:$TM_FILEPATH}\")"
+        ],
+        "description": "加载精灵图"
+      },
+      "d3d.draw_sprite": {
+        "prefix": "d3d.draw_sprite",
+        "body": [
+          "d3d.draw_sprite(${1:ID})"
+        ],
+        "description": "使用D3D渲染器绘制精灵图(序列帧)"
+      },
+      "d3d.get_sprite_origin": {
+        "prefix": "d3d.get_sprite_origin",
+        "body": [
+          "d3d.get_sprite_origin(${1:ID})"
+        ],
+        "description": ""
+      },
+      "d3d.get_sprite_size": {
+        "prefix": "d3d.get_sprite_size",
+        "body": [
+          "d3d.get_sprite_size(${1:ID})"
+        ],
+        "description": "获取精灵图大小"
+      },
+      "d3d.draw_line": {
+        "prefix": "d3d.draw_line",
+        "body": [
+          "d3d.draw_line(v2(${1:start X},${2:start Y}),v2(${3:end X},${4:end Y}),${5:size},${6:color})"
+        ],
+        "description": "使用D3D渲染器绘制线段"
+      },
+      "d3d.draw_rect": {
+        "prefix": "d3d.draw_rect",
+        "body": [
+          "d3d.draw_rect(v2(${1:pos X},${2:pos Y}),v2(${3:size X},${4:size Y}),${5:color})"
+        ],
+        "description": "使用D3D渲染器绘制矩形"
+      },
+      
+
 
 
 
